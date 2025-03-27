@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manos al Barro - Talleres</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Manos al Barro - Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
@@ -24,52 +24,40 @@
             </div>
         </nav>
         <div class="title">
-            <h1>TALLERES</h1>
+            <h1>PRODUCTOS</h1>
         </div>
     </header>
-    <div class="container">
-        
-        <section class="pricing">
-            <h2>QUE OFRECEMOS</h2>
-            <div class="pricing-cards">
-                <div class="price-card">
-                    <div class="price-title">Clase Única</div>
-                    <div class="price"><sup>$</sup>10</div>
-                    <ul class="features">
-                        <li>Material limitado</li>
-                        <li>Sin certificado</li>
-                    </ul>
-                    <a href="#" class="btn">Inscríbete ahora</a>
+
+    <main class="container">
+        <!-- Sección de productos -->
+        <section class="products">
+            <h2>NUESTROS PRODUCTOS</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="producto1.png" alt="Taza de cerámica">
+                    <h3>Taza artesanal</h3>
+                    <p>$15.000 CLP</p>
+                    <button class="btn">Agregar al carrito</button>
                 </div>
-                
-                <div class="price-card">
-                    <div class="price-title">Mensual</div>
-                    <div class="price"><sup>$</sup>50</div>
-                    <ul class="features">
-                        <li>Todo el material</li>
-                        <li>Certificado básico</li>
-                    </ul>
-                    <a href="#" class="btn">Inscríbete ahora</a>
+                <div class="product-card">
+                    <img src="producto2.png" alt="Plato de cerámica">
+                    <h3>Plato decorativo</h3>
+                    <p>$18.000 CLP</p>
+                    <button class="btn">Agregar al carrito</button>
                 </div>
-                
-                <div class="price-card">
-                    <div class="price-title">Anual</div>
-                    <div class="price"><sup>$</sup>100</div>
-                    <ul class="features">
-                        <li>Todo el material</li>
-                        <li>Certificado completo</li>
-                    </ul>
-                    <a href="#" class="btn">Inscríbete ahora</a>
+                <div class="product-card">
+                    <img src="producto3.png" alt="Maceta de cerámica">
+                    <h3>Maceta pintada</h3>
+                    <p>$22.000 CLP</p>
+                    <button class="btn">Agregar al carrito</button>
                 </div>
             </div>
         </section>
-        <h2>INGRESA TUS DATOS</h2>
+
+        <!-- Formulario de contacto -->
         <section class="contact-section">
-            <div class="contact-image">
-                <img src="formulario.png" alt="Persona trabajando en ceramica">
-            </div>
+            <h2>INGRESA TUS DATOS</h2>
             <div class="contact-form">
-                
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Nombre">
@@ -83,17 +71,19 @@
                     <div class="form-group">
                         <textarea class="form-control" placeholder="Mensaje"></textarea>
                     </div>
-                    <button type="submit">Registrar</button>
+                    <button type="submit" class="btn">Registrar</button>
                 </form>
             </div>
         </section>
-    </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-logo">
             <img src="logo.png" alt="Logo">
         </div>
         <div class="footer-text">
-            <p>Elementum commodo magna cursus vitae aliquam. Tempus elit dictum et eget. Quam risus sit sem odio in ullamcorper. Volutpat diam diam in leo....</p>
+            <p>Elementum commodo magna cursus vitae aliquam. Tempus elit dictum et eget. Quam risus sit sem odio in ullamcorper.</p>
         </div>
         <ul class="footer-links">
             <li><a href="#">Quienes Somos</a></li>
