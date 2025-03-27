@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manos al Barro - Talleres</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Talleres</title>
+    
 </head>
 <body>
-    <header>
+    <header class="navbar">
+        <div class="logo">
+            <a href="inicio.html"><img src="../media/logo.png" alt="Logo" ></a>
+        </div>
+        <button class="hamburger" id="menu-btn">☰</button>
         <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
-            </div>
-            <ul>
+            <ul class="nav-links" id="menu">
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="talleres.html">Talleres</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <div class="cart-icon">
-                <img src="carrito.png" alt="Carrito">
-            </div>
         </nav>
-        <div class="title">
-            <h1>TALLERES</h1>
-        </div>
+        <div class="cart-icon">
+            <a href="carrito.html">
+                <img src="../media/carrito.png" alt="Carrito de compras">
+                <span class="cart-count">0</span>
+            </a>
+        </div>  
     </header>
-    <div class="container">
-        
+    
+        <main class="grid-container">
         <section class="pricing">
-            <h2>QUE OFRECEMOS</h2>
+            <h2>Que Ofrecemos</h2>
             <div class="pricing-cards">
                 <div class="price-card">
                     <div class="price-title">Clase Única</div>
@@ -63,42 +66,70 @@
                 </div>
             </div>
         </section>
-        <h2>INGRESA TUS DATOS</h2>
-        <section class="contact-section">
-            <div class="contact-image">
-                <img src="formulario.png" alt="Persona trabajando en ceramica">
-            </div>
-            <div class="contact-form">
                 
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Apellido">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Mensaje"></textarea>
-                    </div>
-                    <button type="submit">Registrar</button>
-                </form>
+               
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Inscripción a Talleres</h2>
+    <form class="p-4 border rounded shadow bg-light ">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="tu_email@email.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ej: +34 643 123 456">
+        </div>
+
+        <div class="mb-3">
+            <label for="taller" class="form-label">Selecciona tu taller</label>
+            <select class="form-select" id="taller">
+                <option selected disabled>Elige una opción...</option>
+                <option value="ceramica">Cerámica</option>
+                <option value="torno">Torno</option>
+                <option value="esmaltado">Esmaltado</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Tipo de pago</label>
+            <select class="form-select" id="precio">
+                <option selected disabled>Elige una opción...</option>
+                <option value="clase">1 clase</option>
+                <option value="Mensual">Mensual</option>
+                <option value="Anual">Anual</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu consulta..."></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+    </form>
+</div>
+
             </div>
         </section>
-    </div>
-    <footer>
-        <div class="footer-logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <div class="footer-text">
-            <p>Elementum commodo magna cursus vitae aliquam. Tempus elit dictum et eget. Quam risus sit sem odio in ullamcorper. Volutpat diam diam in leo....</p>
-        </div>
-        <ul class="footer-links">
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Contáctanos</a></li>
-        </ul>
+        </main>
+    <footer class="footer">
+        <img src="../media/logo.png" alt="Logo Manos al Barro" class="footer-logo">
+        <p>© 2025 Manos al Barro - Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
