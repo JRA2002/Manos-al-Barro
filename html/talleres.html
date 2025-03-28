@@ -9,11 +9,11 @@
     
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar fixed-top">
         <div class="logo">
             <a href="inicio.html"><img src="../media/logo.png" alt="Logo" ></a>
         </div>
-        <button class="hamburger" id="menu-btn">☰</button>
+        <button class="hamburgesa" id="menu-btn">☰</button>
         <nav>
             <ul class="nav-links" id="menu">
                 <li><a href="inicio.html">Inicio</a></li>
@@ -31,7 +31,7 @@
         </div>  
     </header>
     
-        <main class="grid-container">
+    <main class="grid-container">
         <section class="pricing">
             <h2>Que Ofrecemos</h2>
             <div class="pricing-cards">
@@ -69,62 +69,100 @@
                 
                
 
-<div class="container mt-4">
-    <h2 class="text-center mb-4">Inscripción a Talleres</h2>
-    <form class="p-4 border rounded shadow bg-light ">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombres</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-        </div>
+        <div class="container mt-4">
+            <h2 class="text-center mb-4">Inscripción a Talleres</h2>
+            <form class="p-4 border rounded shadow bg-light needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu nombre.
+                    </div>
+                </div>
 
-        <div class="mb-3">
-            <label for="apellido" class="form-label">Apellidos</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
-        </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu apellido.
+                    </div>
+                </div>
 
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="tu_email@email.com">
-        </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="tu_email@email.com" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa un correo válido.
+                    </div>
+                </div>
 
-        <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" placeholder="Ej: +34 643 123 456">
-        </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ej: +34 643 123 456" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu numero de teléfono.
+                    </div>
+                    
+                </div>
 
-        <div class="mb-3">
-            <label for="taller" class="form-label">Selecciona tu taller</label>
-            <select class="form-select" id="taller">
-                <option selected disabled>Elige una opción...</option>
-                <option value="ceramica">Cerámica</option>
-                <option value="torno">Torno</option>
-                <option value="esmaltado">Esmaltado</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="precio" class="form-label">Tipo de pago</label>
-            <select class="form-select" id="precio">
-                <option selected disabled>Elige una opción...</option>
-                <option value="clase">1 clase</option>
-                <option value="Mensual">Mensual</option>
-                <option value="Anual">Anual</option>
-            </select>
-        </div>
+                <div class="mb-3">
+                    <label for="taller" class="form-label">Selecciona tu taller</label>
+                    <select class="form-select" id="taller" required>
+                        <option value="" selected disabled>Elige una opción...</option>
+                        <option value="ceramica">Cerámica</option>
+                        <option value="torno">Torno</option>
+                        <option value="esmaltado">Esmaltado</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Debes seleccionar un taller antes de continuar.
+                    </div>
+            
+                </div>
+                <div class="mb-3">
+                    <label for="precio" class="form-label">Tipo de pago</label>
+                    <select class="form-select" id="precio" required>
+                        <option value="" selected disabled>Elige una opción...</option>
+                        <option value="clase">1 clase</option>
+                        <option value="Mensual">Mensual</option>
+                        <option value="Anual">Anual</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Debes seleccionar un tipo de pago antes de continuar.
+                    </div>
+                </div>
 
-        <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu consulta..."></textarea>
-        </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje (Opcional)</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu consulta..."></textarea>
+                </div>
 
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Registrar</button>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar</button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmacion de Formulario</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Esta seguro de enviar el formulario?
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Confirmar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
 
             </div>
         </section>
-        </main>
+    </main>
     <footer class="footer">
         <img src="../media/logo.png" alt="Logo Manos al Barro" class="footer-logo">
         <p>© 2025 Manos al Barro - Todos los derechos reservados.</p>

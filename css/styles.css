@@ -1,176 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap");
 @import url("talleres.css");
 @import url("footer.css");
-.carousel {
-    max-width: 800px; /* Ajusta el ancho máximo */
-    max-height: 500px; /* Ajusta la altura máxima */
-    margin: auto; /* Centra el carrusel */
-}
 
-.carousel-item img {
-    max-height: 500px; /* Limita la altura de la imagen */
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
-}
-
-
-/* --- Reset básico --- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
-h1, h2 {
-    color: #1F3B60;
+body {
+  background-color:#f9f9f9;
+  padding-top: 70px;
 }
-h1{
-    font-size: 96px;
-    font-family: 'Playfair Display', serif;
+h1,
+h2 {
+  color: #1f3b60;
 }
-h2{
-    font-size: 50px;
+h1 {
+  font-size: 96px;
+  font-family: "Playfair Display", serif;
+}
+h2 {
+  font-size: 50px;
 }
 
 /* --- Navbar --- */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li a {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
 }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: black;
+.hamburgesa {
+  display: none;
+  font-size: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
 }
 /* --- Imagenes Section --- */
 
-.logo img , .cart-icon img{
-    width: auto;
-    height: 80px;
-}   
+.logo img,
+.cart-icon img {
+  width: auto;
+  height: 80px;
+}
 
 /* --- Layout con CSS Grid --- */
 .grid-container {
-    display: grid;
-    grid-template-areas: 
-        "quienes-somos"
-        "talleres"
-        "productos";
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "quienes-somos"
+    "talleres"
+    "productos";
+  gap: 20px;
+  padding: 20px;
 }
 
 /* --- Secciones de la Página --- */
-.quienes-somos, .talleres, .productos {
-    padding: 20px;
-    background: lightgray;
-    text-align: center;
+.quienes-somos,
+.talleres,
+.productos {
+  padding: 20px;
+  background: lightgray;
+  text-align: center;
 }
 
-.quienes-somos { grid-area: quienes-somos; background: #f8b400; padding: 50px 20px;
-    flex-wrap: wrap;display: flex;
-    }
-.talleres { grid-area: talleres; background: #f28b82; }
-.productos { grid-area: productos; background: #81c995; }
+.quienes-somos {
+  grid-area: quienes-somos;
+  background:#f9f9f9;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.talleres {
+  grid-area: talleres;
+  background: #f9f9f9;
+}
+.productos {
+  grid-area: productos;
+  background: #f9f9f9;
+}
+
+.productos h2 {
+  padding-bottom: 40px;
+}
 
 /* ---  SOBRE NOSOTROS --- */
 
 .contenido {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
-    line-height: 1.8;
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+  line-height: 1.8;
 }
 
-
 .imagen {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .imagen img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
 }
 
 /* --- Carrito de compras --- */
 .cart-icon {
-    position: relative;
+  position: relative;
 }
 
 .cart-icon img {
-    width: 50px;
-    height: auto;
+  width: 50px;
+  height: auto;
 }
 
 /* Contador de productos en el carrito */
 .cart-count {
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    background: red;
-    color: white;
-    font-size: 14px;
-    padding: 2px 6px;
-    border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
 }
 
 .warning {
-    
-    display: flex;
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* --- Carrousel Productos --- */
+.carousel {
+  max-width: 800px;
+  max-height: 500px;
+  margin: auto;
+}
 
-/* --- Diseño Responsive (Móviles) --- */
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* --Seccion de Talleres en Inicio */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.card-body {
+  text-align: center;
+}
+
+/* --- Diseño Responsive (Tablets) --- */
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-areas:
-            "quienes-somos"
-            "talleres"
-            "productos";
-    }
+  .grid-container {
+    grid-template-areas:
+      "quienes-somos"
+      "talleres"
+      "productos";
+  }
 
-    .hamburger {
-        display: block;
-    }
+  .quienes-somos {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #ff6600;
-        text-align: center;
-        padding: 10px 0;
-    }
+  .quienes-somos .imagen img {
+    max-width: 90%; 
+  }
 
-    .nav-links.show {
-        display: flex;
-    }
+  .hamburgesa {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    text-align: center;
+  }
+
+}
+/* --- Diseño Responsive (Móviles) --- */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-areas:
+      "quienes-somos"
+      "talleres"
+      "productos";
+  }
+
+  .quienes-somos {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .quienes-somos .imagen img {
+    max-width: 90%; 
+  }
+
+  .hamburgesa {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
 
