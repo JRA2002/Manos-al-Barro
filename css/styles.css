@@ -75,13 +75,6 @@ h2 {
   cursor: pointer;
   color: black;
 }
-/* --- Imagenes Seccion --- */
-
-.logo img,
-.cart-icon img {
-  width: auto;
-  height: 80px;
-}
 
 /* --- CSS Grid --- */
 .grid-container {
@@ -171,6 +164,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 /* --- Carrousel Productos --- */
@@ -218,6 +213,10 @@ h2 {
       "productos";
   }
 
+  body{
+    padding-top: 140px;
+  }
+
   .quienes-somos {
     grid-template-columns: 1fr;
     text-align: center;
@@ -245,6 +244,9 @@ h2 {
       "quienes-somos"
       "talleres"
       "productos";
+  }
+  body{
+    padding-top: 70px;
   }
 
   .quienes-somos {
