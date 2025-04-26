@@ -36,14 +36,22 @@
       </div>
     </header>
     <div class="video-container">
-      <video id="myVideo" loop autoplay>
-        <source src="../media/final_video_manos_barro.mp4" type="video/mp4">
+      <video id="myVideo" loop autoplay >
+        <source src="https://res.cloudinary.com/drdcw81pd/video/upload/v1745670042/epb4jasqenjtpmcbyiux.mp4" type="video/mp4">
         Your browser does not support HTML video.
       </video>
       <button class="custom-controls" onclick="togglePlay()">
         <i id="playIcon" class="lni lni-play"></i>
       </button>
     </div>
+    <!-- <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/DKcFtvFbaIA?si=qCjwi_ny0706e03z" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+    </div> -->
     
     <main class="grid-container">
       
@@ -174,11 +182,23 @@
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-products"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-products"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
           </div>
           <div class="carousel-inner" data-bs-interval="3000" data-bs-ride="carousel">
             <div class="carousel-item active">
               <img
-                src="../media/producto1.png"
+                src="../media/producto1.jpg"
                 class="d-block w-100"
                 alt="producto1"
                 loading="lazy"
@@ -194,9 +214,25 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../media/producto3.png"
+                src="../media/producto3.jpg"
                 class="d-block w-100"
                 alt="producto3"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../media/producto4.jpg"
+                class="d-block w-100"
+                alt="producto4"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../media/producto5.jpg"
+                class="d-block w-100"
+                alt="producto5"
                 loading="lazy"
               />
             </div>
