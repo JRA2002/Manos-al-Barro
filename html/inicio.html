@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     <title>Manos al Barro</title>
   </head>
   <body>
@@ -34,9 +35,21 @@
         </a>
       </div>
     </header>
-
+    <div class="video-container">
+      <video id="myVideo" loop autoplay>
+        <source src="../media/final_video_manos_barro.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+      <button class="custom-controls" onclick="togglePlay()">
+        <i id="playIcon" class="lni lni-play"></i>
+      </button>
+    </div>
+    
     <main class="grid-container">
+      
       <section id="quienes-somos" class="quienes-somos">
+          
+        </div>
         <div class="contenido">
           <h2>Sobre Nosotros</h2>
           <p>
@@ -57,13 +70,7 @@
         <div class="imagen">
           <img src="../media/taller.png" alt="taller de ceramica" loading="lazy" />
         </div>
-        <div class="video-container">
-          <video controls>
-            <source src="../media/cajon_maipo.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-          </video>
-          
-        </div>
+        
       </section>
 
       <section id="talleres" class="talleres">
@@ -145,7 +152,7 @@
 
       <section id="productos" class="productos">
         <h2>Nuestros Productos</h2>
-        <div id="carousel-products" class="carousel slide">
+        <div id="carousel-products" class="carousel slide" >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -168,7 +175,7 @@
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner" data-bs-interval="3000" data-bs-ride="carousel">
             <div class="carousel-item active">
               <img
                 src="../media/producto1.png"
