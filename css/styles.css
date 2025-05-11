@@ -109,7 +109,8 @@ h2 {
   grid-template-areas:
     "quienes-somos"
     "talleres"
-    "productos";
+    "productos"
+    "mapa";
   gap: 20px;
   padding: 20px;
 }
@@ -117,6 +118,7 @@ h2 {
 /* --- Secciones de la Página --- */
 .quienes-somos,
 .talleres,
+.mapa,
 .productos {
   padding: 20px;
   background: lightgray;
@@ -141,7 +143,13 @@ h2 {
   background: #f9f9f9;
 }
 
-.productos h2 {
+.mapa {
+  grid-area: mapa;
+  background: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.productos h2 ,.mapa h2 {
   padding-bottom: 40px;
 }
 
@@ -241,7 +249,8 @@ h2 {
     grid-template-areas:
       "quienes-somos"
       "talleres"
-      "productos";
+      "productos"
+      "mapa";
   }
 
   body{
@@ -276,7 +285,8 @@ h2 {
     grid-template-areas:
       "quienes-somos"
       "talleres"
-      "productos";
+      "productos"
+      "mapa";
   }
   body{
     padding-top: 70px;
