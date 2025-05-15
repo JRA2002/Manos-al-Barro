@@ -31,22 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   })()
 
- 
-  function togglePlay() {
-    const video = document.getElementById("myVideo");
-    const icon = document.getElementById("playIcon");
-    
-    if (video.paused) {
-      video.play();
-      icon.classList.remove("lni-play");
-      icon.classList.add("lni-pause");
-    } else {
-      video.pause();
-      icon.classList.remove("lni-pause");
-      icon.classList.add("lni-play");
-    }
-  }
-
 //Script para la animacion
 
 const observer = new IntersectionObserver((entries) => {

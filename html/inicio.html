@@ -35,21 +35,15 @@
         </a>
       </div>
     </header>
-    <div class="video-container">
-      <video id="myVideo" loop autoplay >
+    <!-- <div class="video-container">
+      <video controls id="myVideo" loop>
         <source src="https://res.cloudinary.com/drdcw81pd/video/upload/v1745670042/epb4jasqenjtpmcbyiux.mp4" type="video/mp4">
         Your browser does not support HTML video.
       </video>
-      <button class="custom-controls" onclick="togglePlay()">
-        <i id="playIcon" class="lni lni-play"></i>
-      </button>
-    </div>
+    </div> -->
     
     <main class="grid-container">
-      
       <section id="quienes-somos" class="quienes-somos">
-          
-        </div>
         <div class="contenido">
           <h2>Sobre Nosotros</h2>
           <p>
@@ -68,11 +62,15 @@
           </p>
         </div>
         <div class="imagen">
-          <img src="../media/taller.png" alt="taller de ceramica" loading="lazy" />
+          <img src="../media/seccion_taller.jpg" alt="taller de ceramica"/>
         </div>
-        
       </section>
-
+      <section class="video-container">
+        <video controls id="myVideo" loop>
+          <source src="https://res.cloudinary.com/drdcw81pd/video/upload/v1745670042/epb4jasqenjtpmcbyiux.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </section>
       <section id="talleres" class="talleres">
         <div class="container-fluid my-5">
           <h2 class="text-center mb-4">Nuestros Talleres</h2>
@@ -80,7 +78,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="../media/taller1.png"
+                  src="../media/taller1.jpg"
                   class="card-img-top"
                   alt="Taller de Torno"
                   loading="lazy"
@@ -99,7 +97,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="../media/taller2.png"
+                  src="../media/taller2.jpg"
                   class="card-img-top"
                   alt="Taller de Cerámica"
                   loading="lazy"
@@ -118,7 +116,7 @@
             <div class="col-md-4">
               <div class="card">
                 <img
-                  src="../media/taller3.png"
+                  src="../media/taller3.jpg"
                   class="card-img-top"
                   alt="Taller de Esmaltado"
                   loading="lazy"
@@ -152,116 +150,56 @@
 
       <section id="productos" class="productos">
         <h2>Nuestros Productos</h2>
-        <div id="carousel-products" class="carousel slide" >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carousel-products"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carousel-products"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carousel-products"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carousel-products"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carousel-products"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-          </div>
-          <div class="carousel-inner" data-bs-interval="3000" data-bs-ride="carousel">
-            <div class="carousel-item active">
-              <img
-                src="../media/producto1.jpg"
-                class="d-block w-100"
-                alt="producto1"
-                loading="lazy"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../media/producto2.png"
-                class="d-block w-100"
-                alt="producto2"
-                loading="lazy"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../media/producto3.jpg"
-                class="d-block w-100"
-                alt="producto3"
-                loading="lazy"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../media/producto4.jpg"
-                class="d-block w-100"
-                alt="producto4"
-                loading="lazy"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../media/producto5.jpg"
-                class="d-block w-100"
-                alt="producto5"
-                loading="lazy"
-              />
+        <div class="products-container">
+          <div class="card m-3 own-card">
+            <img src="../media/producto1.jpg" class="card-img-top" alt="Producto de cerámica">
+            <div class="card-body">
+              <h5 class="card-title">Taza de Cerámica Artesanal</h5>
+              <p class="card-text">Hecha a mano, perfecta para café o té. Diseño rústico y elegante.</p>
+              <p class="fw-bold text-primary">€12,99</p>
+              <a href="#" class="btn">Comprar</a>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carousel-products"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carousel-products"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="card m-3 own-card">
+            <img src="../media/producto2.png" class="card-img-top" alt="Producto de cerámica">
+            <div class="card-body">
+              <h5 class="card-title">Tetera de Cerámica</h5>
+              <p class="card-text">Hecha a mano, perfecta para café o té. Diseño rústico y elegante.</p>
+              <p class="fw-bold text-primary">€12,99</p>
+              <a href="#" class="btn">Comprar</a>
+            </div>
+          </div>
+          <div class="card m-3 own-card">
+            <img src="../media/producto3.jpg" class="card-img-top" alt="Producto de cerámica">
+            <div class="card-body">
+              <h5 class="card-title">Conejo de ceramica</h5>
+              <p class="card-text">Hecha a mano, perfecta para café o té. Diseño rústico y elegante.</p>
+              <p class="fw-bold text-primary">€22,99</p>
+              <a href="#" class="btn">Comprar</a>
+            </div>
+          </div>
+          <div class="card m-3 own-card">
+            <img src="../media/producto4.jpg" class="card-img-top" alt="Producto de cerámica">
+            <div class="card-body">
+              <h5 class="card-title">Portacepillos en ceramica</h5>
+              <p class="card-text">Hecha a mano, perfecta para café o té. Diseño rústico y elegante.</p>
+              <p class="fw-bold text-primary">€6,99</p>
+              <a href="#" class="btn">Comprar</a>
+            </div>
+          </div>
         </div>
       </section>
+      
       <section id="mapa" class="mapa">
-        <h2>Visítanos</h2>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4301.243982495271!2d-3.691329113859453!3d40.42356413476486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1sen!2ses!4v1746971498893!5m2!1sen!2ses" 
-          width="60%" 
-          height="450" 
+        <div class="mapa-container">
+          <h2>Visítanos</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4301.243982495271!2d-3.691329113859453!3d40.42356413476486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1sen!2ses!4v1746971498893!5m2!1sen!2ses"  
           style="border:0;" 
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <p>Calle de Alcalá, 123, 4º B<br>28009 Madrid<br>Madrid</p>
-
         </div>
     </main>
 
