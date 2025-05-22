@@ -377,3 +377,16 @@ h2 {
     display: flex;
   }
 }
+
+/* --- Footer --- */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
